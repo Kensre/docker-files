@@ -6,6 +6,10 @@ sudo amazon-linux-extras install docker # for AMAZON Linux 2
 
 sudo service docker start # starting the service &&  if this gives an error, you may need to restart the instance. 
 
+# sudo service docker stop
+# sudo systemctl stop docker
+# sudo systemctl status docker.service
+
 sudo usermod -a -G docker ec2-user // adding ec2-user to the docker group so that ec2-user can execute docker commands without using sudo
 
 # logout and login as ec2-user for changes to take affect
