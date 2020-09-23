@@ -17,6 +17,8 @@ sudo usermod -a -G docker ec2-user // adding ec2-user to the docker group so tha
 docker info # this should run without using 'sudo' now.
 docker version
 docker images
-docker build -t "NAME:Dockerfile" . # name here is the name you want to give to the image that will be created when the command is run successfully! 
+docker build -t "NAME:version" . # name here is the name you want to give to the container, make sure you are in the same directory wher you saved the Dockerfile 
+
+docker run -d 
 
 # Working with Dockerfile and images will be added soon. 
