@@ -19,6 +19,6 @@ docker version
 docker images
 docker build -t "NAME:version" . # name here is the name you want to give to the container, make sure you are in the same directory wher you saved the Dockerfile 
 
-docker run -d 
+docker run -d --publish 8080:80 --name containername image:nameused # -d:run in bg, --publish:bind 8080 host port to 80 container port  
 
 # Working with Dockerfile and images will be added soon. 
